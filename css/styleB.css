@@ -1,0 +1,32 @@
+@font-face {
+            font-family: 'AT Apoc Revelations';
+            src: url('font/AT Apoc Revelations.otf') format('opentype');
+            /* You might also need additional font formats like woff, woff2 for better compatibility */
+        }
+
+body {
+            font-family: 'AT Apoc Revelations', sans-serif;
+}
+
+.title {
+    font-size: 7vh;
+    color: white;
+}
+
+.subtitle {
+    font-size: 2vh;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+header{
+    height: 100vh !important;
+}
+
+.scrollbutton {
+    position: absolute;
+    bottom: 10vh;
+    left: 35vw;
+    color: white
+}
