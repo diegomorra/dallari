@@ -54,15 +54,15 @@ body, html {
 
 /* Define different background images for each box */
 .box:nth-child(1) {
-  background-image: url('assets/img/test-01.jpg');
+  background-image: url('assets/img/test-01.jpeg');
 }
 
 .box:nth-child(2) {
-  background-image: url('assets/img/test-01.jpg');
+  background-image: url('assets/img/test-01.jpeg');
 }
 
 .box:nth-child(3) {
-  background-image: url('assets/img/test-01.jpg');
+  background-image: url('assets/img/test-01.jpeg');
 }
 
 /* Adjust layout for mobile devices */
