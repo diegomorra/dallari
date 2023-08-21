@@ -6,10 +6,19 @@
 
 body {
             font-family: 'AT Apoc Revelations', sans-serif;
+    overflow-x: hidden;
 }
 
 .title {
     font-size: 7vh;
+    color: white;
+}
+a{
+    color: white;
+    padding: 0px!important;
+}
+
+a:hover{
     color: white;
 }
 
@@ -32,6 +41,11 @@ header{
     color: white
 }
 
+.scrollbuttonup {
+
+    color: white
+}
+
 body, html {
   height: 100%;
   margin: 0;
@@ -49,21 +63,44 @@ body, html {
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 20px;
+  color: white;
+  font-size: 4vh;
+  padding: 20%;
+  height: 33vh;
 }
 
 /* Define different background images for each box */
-.box:nth-child(1) {
-  background-image: url('assets/img/test-01.jpeg');
+.one{
+  background-image: url("../assets/img/test-01.jpeg");
+  
 }
 
-.box:nth-child(2) {
-  background-image: url('assets/img/test-01.jpeg');
+.two{
+  background-image: url('../assets/img/test-01.jpeg');
 }
 
-.box:nth-child(3) {
-  background-image: url('assets/img/test-01.jpeg');
+.three{
+  background-image: url('../assets/img/test-01.jpeg');
 }
+
+.carousel-container {
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel {
+  display: flex;
+  scroll-snap-type: x mandatory;
+}
+
+.img-item {
+  width: 100%;
+  min-width: 100%;
+  scroll-snap-align: start;
+}
+
+
 
 /* Adjust layout for mobile devices */
 @media (max-width: 767px) {
@@ -74,6 +111,10 @@ body, html {
   }
 
   .box {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
   }
+    
+    .fastlink {
+    height: 100vh;
+    }
 }

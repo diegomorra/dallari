@@ -52,3 +52,31 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+const carousel = document.querySelector('.carousel');
+const images = carousel.querySelectorAll('img');
+let isDragging = false;
+let startPosX = 0;
+let scrollLeft = 0;
+
+carousel.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startPosX = e.clientX;
+  scrollLeft = carousel.scrollLeft;
+});
+
+carousel.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  const x = e.clientX - startPosX;
+  carousel.scrollLeft = scrollLeft - x;
+});
+
+carousel.addEventListener('mouseup', () => {
+  isDragging = false;
+});
+
+carousel.addEventListener('mouseleave', () => {
+  isDragging = false;
+});
+
