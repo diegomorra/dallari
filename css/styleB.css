@@ -31,3 +31,49 @@ header{
     left: 35vw;
     color: white
 }
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.box-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the section height to the viewport height */
+}
+
+.box {
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Define different background images for each box */
+.box:nth-child(1) {
+  background-image: url('assets/img/test-01.jpg');
+}
+
+.box:nth-child(2) {
+  background-image: url('assets/img/test-01.jpg');
+}
+
+.box:nth-child(3) {
+  background-image: url('assets/img/test-01.jpg');
+}
+
+/* Adjust layout for mobile devices */
+@media (max-width: 767px) {
+  .box-section {
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .box {
+    margin-bottom: 20px;
+  }
+}
